@@ -1,0 +1,142 @@
+@import "normalize";
+@import "formalize";
+@import "variables";
+@import "sidebar";
+@import "header";
+@import "content";
+@import url(../fonts/sofia-pro/stylesheet.css);
+//  ==========================================================================
+//  margin-padding
+//  ==========================================================================
+$space-values: ( 0, 3, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50) !default;
+$space-prefixes: ( p: padding, pt: padding-top, pr: padding-right, pb: padding-bottom, pl: padding-left, m: margin, mt: margin-top, mr: margin-right, mb: margin-bottom, ml: margin-left, ) !default;
+@mixin make-spaces() {
+    @each $attr-short,
+    $attr-long in $space-prefixes {
+        @each $value in $space-values {
+            .#{$attr-short}-#{$value} {
+                #{$attr-long}: #{$value}#{'px'};
+            }
+        }
+    }
+}
+
+@include make-spaces();
+body {
+    background: #fff;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'Sofia Pro';
+    color: $primary-text-color;
+    overflow-x: hidden;
+    &.no-scroll {
+        overflow: hidden;
+    }
+}
+
+html {
+    height: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.app {
+    padding-left: 280px;
+    -webkit-transition: .2s;
+    transition: .2s;
+    height: 100vh;
+    &.sidebar-min {
+        padding-left: 70px;
+        header {
+            left: 70px;
+        }
+        .sidebar {
+            width: 70px;
+            .sidebar-header {
+                padding: 0;
+                .logo {
+                    display: none;
+                }
+                .burger-icon {
+                    width: 70px;
+                    height: 70px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    box-shadow: 0 5px 10px rgba(86, 106, 165, 0.08);
+                }
+            }
+            .sidebar-footer {
+                .band {
+                    padding: 20px 10px;
+                    .progress-item {
+                        margin-bottom: 10px;
+                        &:last-child {
+                            display: none;
+                        }
+                        &:nth-child(2) {
+                            margin-bottom: 0;
+                        }
+                        .progress-top {
+                            .progress-name {
+                                font-size: 10px;
+                            }
+                            .progress-right {
+                                display: none;
+                            }
+                        }
+                        .progress-box {
+                            .progress-num {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+            .navigation {
+                overflow-y: visible;
+                .top {
+                    padding-top: 20px;
+                    .nav-link {
+                        padding: 0;
+                        &.open {
+                            .link {
+                                color: $primary-text-color;
+                                background-color: transparent;
+                                .svg-icon {
+                                    svg {
+                                        path {
+                                            fill: $secondary-color;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .nav-sub {
+                            display: none !important;
+                        }
+                        .link {
+                            padding: 0;
+                            width: 70px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            .svg-icon {
+                                margin-right: 0;
+                            }
+                            span.text {
+                                display: none;
+                            }
+                            .btn-icon {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

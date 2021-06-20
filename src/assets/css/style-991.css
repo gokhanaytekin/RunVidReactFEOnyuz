@@ -1,0 +1,69 @@
+.dash-table {
+    overflow: scroll;
+}
+
+.content-mail {
+    flex-direction: column;
+}
+
+.content-mail .content-sidebar {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    flex-shrink: inherit;
+    border-right: 0;
+}
+
+.content-mail .content-message {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    flex-shrink: inherit;
+}
+
+.content-mail .message-detail {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+.report-page {
+    flex-direction: column;
+}
+
+.report-page .report-sidebar {
+    width: 100%;
+}
+
+.report-page .report-sidebar .report-title {
+    height: 80px;
+    font-size: 24px;
+}
+
+.report-page .report-sidebar .report-list {
+    padding: 10px;
+}
+
+.report-page .report-sidebar .report-list .report-item {
+    margin-bottom: 10px;
+}
+
+.report-page .content-report .content-top {
+    padding: 10px;
+    height: auto;
+    margin-bottom: 0;
+}
+
+.report-page .content-report .content-top .content-top-left .content-top-left-title {
+    font-size: 24px;
+}
+
+.report-page .content-report .report-detail {
+    padding: 10px;
+    margin-top: 0;
+}
+
+.content {
+    padding: 20px;
+    margin-top: 70px;
+}

@@ -1,0 +1,202 @@
+.mobile-menu {
+    display: block;
+}
+
+#menuToggle {
+    background-color: #C40007;
+}
+
+.sidebar {
+    display: none;
+}
+
+.app.sidebar-min header {
+    left: 0;
+}
+
+.app.sidebar-min {
+    padding-left: 0;
+}
+
+.app {
+    padding-left: 0;
+    height: auto;
+}
+
+header {
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0 10px;
+}
+
+header #header-search {
+    position: relative;
+    width: 100%;
+}
+
+.header .header-right {
+    display: none;
+}
+
+.content {
+    padding: 20px 10px;
+    margin-top: 70px;
+}
+
+.content .content-top .breadcrumb li a {
+    font-size: 15px;
+}
+
+.site-modal.site-modal-lg {
+    width: 100%;
+}
+
+.site-modal .modal-header {
+    padding: 0 10px;
+}
+
+.site-modal .modal-header .fancybox-close-small {
+    right: 10px !important;
+}
+
+.site-modal .modal-body {
+    padding: 10px;
+}
+
+.dash-table table {
+    font-size: 13px;
+}
+
+.dash-table table tbody th,
+.dash-table table tbody td,
+.dash-table table thead tr th {
+    padding: 10px;
+}
+
+.grid {
+    grid-gap: 10px;
+    gap: 10px;
+}
+
+.col-sm-12 {
+    -ms-grid-column-span: 12;
+    grid-column-end: span 12;
+}
+
+.status-page .logo {
+    margin-top: 20px;
+}
+
+.status-page .status-title {
+    padding-top: 120px;
+}
+
+.status-page .status-title .status-title-bg img {
+    width: 100%;
+}
+
+.status-page .status-title .status-title-text {
+    font-size: 150px;
+    line-height: 70px;
+}
+
+.status-page .status-title .image.s404 img {
+    height: 150px;
+}
+
+.status-page .status-title .image.s404 {
+    left: 0;
+    right: -70px;
+    bottom: 0;
+}
+
+.status-page .status-bottom {
+    padding: 20px 0;
+}
+
+.status-page .status-bottom .status-bottom-text .title {
+    font-size: 24px;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+
+.status-page .status-bottom .status-bottom-text .text {
+    font-size: 14px;
+    line-height: 22px;
+    color: #fff;
+    padding: 0 10px;
+}
+
+.status-page .status-bottom .status-bottom-text .text br {
+    display: none;
+}
+
+.status-page .status-bottom .status-bottom-text a {
+    margin-top: 15px;
+    padding: 0 20px;
+}
+
+.status-page .status-title .image.s403 img {
+    height: 100px;
+}
+
+.status-page .status-title .image.s403 {
+    bottom: 40px;
+    left: 0;
+    right: -70px;
+}
+
+.status-page .status-title .image.s503 img {
+    height: 120px;
+}
+
+.status-page .status-title .status-title-text.error-text {
+    font-size: 80px;
+    line-height: 35px;
+}
+
+.status-page .status-title .image.serror img {
+    height: 50px;
+}
+
+.status-page .status-title .image.serror {
+    bottom: 4px;
+    left: 0;
+    right: -50px;
+}
+
+.status-page .status-right-bg {
+    display: none;
+}
+
+.status-page .status-title.under-title {
+    padding-top: 70px;
+}
+
+.status-page .status-title .status-title-text.under-text {
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    margin-bottom: -20px;
+}
+
+.status-page .status-title .status-title-text.under-text img {
+    height: 30px !important;
+}
+
+.status-page .status-title .status-title-text .under-2 {
+    position: absolute;
+    left: 50px;
+    top: -40px;
+    height: 68px;
+}
+
+.status-page .status-title .status-title-text .under-1 {
+    position: absolute;
+    left: -15px;
+    bottom: 10px;
+    height: 68px;
+}
